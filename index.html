@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Context2d : HTML5 Canvas Library">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Context2d</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/farsult/Context2D">View on GitHub</a>
+
+          <h1 id="project_title">Context2d</h1>
+          <h2 id="project_tagline">HTML5 Canvas Library</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/farsult/Context2D/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/farsult/Context2D/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="context2d" class="anchor" href="#context2d" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Context2D</h1>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">Canvas API</a> reinvented</li>
+<li>Chain methods</li>
+<li>Write all style properties inside of an object and set them using <em>.setStyle(obj)</em>
+</li>
+<li>Two additional shapes: 
+
+<ul>
+<li>
+<em>.trgl(x0, y0, x1, y1, x2, y2)</em> - 3 points triangle</li>
+<li>
+<em>.rtrgl(x0, y0, x1, y1)</em> - right triangle</li>
+</ul>
+</li>
+</ul>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Download <code>context2D.js</code> and include it in your index.html file.</p>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>Create a new Context2D(id) object </p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-k">var</span> c <span class="pl-k">=</span> <span class="pl-k">new</span> <span class="pl-en">Context2D</span>(<span class="pl-s"><span class="pl-pds">'</span>canvas<span class="pl-pds">'</span></span>);</pre></div>
+
+<p>set the size of the canvas if needed, defaults to 300x150</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">c</span>.<span class="pl-c1">size</span>(<span class="pl-c1">window</span>.<span class="pl-c1">innerWidth</span>, <span class="pl-c1">window</span>.<span class="pl-c1">innerHeight</span>);</pre></div>
+
+<p>set the style</p>
+
+<div class="highlight highlight-source-js"><pre>  <span class="pl-smi">c</span>.<span class="pl-en">setStyle</span>({
+   fillStyle<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>red<span class="pl-pds">"</span></span>,
+   strokeStyle<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>green<span class="pl-pds">"</span></span>,
+   lineWidth<span class="pl-k">:</span> <span class="pl-c1">10</span>
+});</pre></div>
+
+<p>draw something</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-smi">c</span>.<span class="pl-en">beginPath</span>().<span class="pl-en">rect</span>(<span class="pl-c1">10</span>, <span class="pl-c1">10</span>, <span class="pl-c1">50</span>, <span class="pl-c1">50</span>).<span class="pl-en">stroke</span>();</pre></div>
+
+<h2>
+<a id="canvas-api" class="anchor" href="#canvas-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Canvas API</h2>
+
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D">https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h2>
+
+<p>MIT</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Context2d maintained by <a href="https://github.com/farsult">farsult</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
