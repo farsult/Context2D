@@ -1,7 +1,7 @@
 # Context2D
 
 ## Features
- - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) reinvented
+ - [Canvas API](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D) improved
  - Chain methods
  - Write all style properties inside of an object and set them using *.setStyle(obj)*
  - Two additional shapes: 
